@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'list.dart';
+import 'languages.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,16 +46,16 @@ class _MyHomePageState extends State<MyHomePage> {
               parent: AlwaysScrollableScrollPhysics()), // new
           controller: _controller,
           children: <Widget>[
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
-            Task(),
+            Task(languageData[0]),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
+            // Task(),
           ],
         ),
       ),

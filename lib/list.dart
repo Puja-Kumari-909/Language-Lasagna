@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'languageDetails.dart';
+import 'languages.dart';
 
 class Task extends StatefulWidget {
-  const Task({Key? key}) : super(key: key);
+  final Languages languages;
+  const Task(this.languages);
 
   @override
   _TaskState createState() => _TaskState();
@@ -11,11 +13,21 @@ class Task extends StatefulWidget {
 class _TaskState extends State<Task> {
   @override
   Widget build(BuildContext context) {
+    return LanguageTile();
+  }
+}
+
+class LanguageTile extends StatelessWidget {
+  final Languages languages;
+  const LanguageTile(this.languages);
+
+  @override
+  Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Details()),
+          MaterialPageRoute(builder: (context) => Details(languages)),
         );
       },
       child: Container(
@@ -46,20 +58,18 @@ class _TaskState extends State<Task> {
                 width: 5,
               ),
               CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      'https://lh3.googleusercontent.com/a-/AAuE7mChgTiAe-N8ibcM3fB_qvGdl2vQ9jvjYv0iOOjB=s96-c'),
-                  radius: 30.0),
+                  backgroundImage: AssetImage('$imagePath'), radius: 30.0),
               SizedBox(
                 width: 100,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Java", style: TextStyle(fontSize: 30)),
+                  Text("$language", style: TextStyle(fontSize: 30)),
                   SizedBox(
                     height: 10,
                   ),
-                  Text('1996', style: TextStyle(fontSize: 10)),
+                  Text('$year', style: TextStyle(fontSize: 10)),
                 ],
               ),
               SizedBox(
