@@ -5,7 +5,7 @@ import 'languages.dart';
 
 class DetailsP extends StatelessWidget {
   final Languages languages;
-  const DetailsP(this.Languages);
+  const DetailsP(this.languages);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class DetailsP extends StatelessWidget {
                 width: double.infinity,
                 fit: BoxFit.fill,
                 image: AssetImage(
-                  '$imagePath',
+                  '${languages.imagePath}',
                 ),
               ),
               SizedBox(
@@ -67,7 +67,7 @@ class DetailsP extends StatelessWidget {
                     ],
                   ),
                   child: Text(
-                    "$language",
+                    "${languages.language}",
                     style: TextStyle(
                         fontWeight: FontWeight.w900,
                         fontSize: 30,
@@ -102,7 +102,7 @@ class DetailsP extends StatelessWidget {
                       ],
                     ),
                     child: Text(
-                      "Est $year",
+                      "Est ${languages.year}",
                       style: TextStyle(
                           fontWeight: FontWeight.w900,
                           fontSize: 10,
@@ -118,7 +118,7 @@ class DetailsP extends StatelessWidget {
                 child: DefaultTextStyle(
                   style: TextStyle(decoration: TextDecoration.none),
                   child: Text(
-                    '$text',
+                    '${languages.text}',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                         fontWeight: FontWeight.normal,
