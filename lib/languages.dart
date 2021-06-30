@@ -17,7 +17,7 @@ List<Languages> languageData = [
   Languages("assets/csharp.png", "C#", "The name of the language is stimulated by musical notation. The syntax of C# is similar to the C-style family such as Java, C, C++", "2000"),
   Languages("assets/cpp.png", "CPP", "C++ was Originally Called The New C. C++ has influenced many other programming languages, some of which include C#, Java and even newer versions of C", "1985"),
   Languages("assets/javascript.png", "JS", "JavaScript was being developed under the name Mocha. Brandan Eich developed this new scripting language in just 10 days. It was originally named Mocha but quickly became known as LiveScript and later JavaScript.", "1995"),
-  Languages("assets/python.png", "PYTHON", "Python was not created as a commercial or a professional project rather Python was a hobby project for the developer Guido van Rossum and he was a big fan of BBC’s TV Show so he named it Python!", "2001"),
+  Languages("assets/python.png", "PYTHON", "Python was not created as a commercial or a professional project rather Python was a hobby project for the developer Guido van Rossum and he was a big fan of BBC’s TV Show so he named it Python!", "1991"),
 ];
 
 
