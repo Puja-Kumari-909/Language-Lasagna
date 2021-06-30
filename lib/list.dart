@@ -58,18 +58,19 @@ class LanguageTile extends StatelessWidget {
                 width: 5,
               ),
               CircleAvatar(
-                  backgroundImage: AssetImage('$imagePath'), radius: 30.0),
+                  backgroundImage: AssetImage('${languages.imagePath}'),
+                  radius: 30.0),
               SizedBox(
                 width: 100,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("$language", style: TextStyle(fontSize: 30)),
+                  Text("${languages.language}", style: TextStyle(fontSize: 30)),
                   SizedBox(
                     height: 10,
                   ),
-                  Text('$year', style: TextStyle(fontSize: 10)),
+                  Text('${languages.year}', style: TextStyle(fontSize: 10)),
                 ],
               ),
               SizedBox(
