@@ -7,13 +7,16 @@ class Task extends StatefulWidget {
   const Task(this.languages);
 
   @override
-  _TaskState createState() => _TaskState();
+  _TaskState createState() => _TaskState(languages);
 }
 
 class _TaskState extends State<Task> {
+  final Languages languages;
+
+  _TaskState(this.languages);
   @override
   Widget build(BuildContext context) {
-    return LanguageTile();
+    return LanguageTile(languages);
   }
 }
 

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:language_list/languages.dart';
-import 'languageDetails.dart';
-import 'languages.dart';
 
 class DetailsP extends StatelessWidget {
   final Languages languages;
